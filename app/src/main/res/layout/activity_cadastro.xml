@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CadastroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="317dp"
+            android:layout_height="154dp"
+            android:layout_marginBottom="16dp"
+            app:srcCompat="@drawable/cinetalk" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="6dp"
+            android:gravity="center"
+            android:text="Criar conta"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextCadastroNome"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="6dp"
+            android:ems="10"
+            android:hint="Nome"
+            android:inputType="text"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkDarkerGray"
+            android:textSize="16dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextCadastroEmail"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="6dp"
+            android:ems="10"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkDarkerGray"
+            android:textSize="16dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextCadastroSenha"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="6dp"
+            android:ems="10"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkDarkerGray"
+            android:textSize="16dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextCadastroConfirmarSenha"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="6dp"
+            android:ems="10"
+            android:hint="Confirmar senha"
+            android:inputType="textPassword"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkDarkerGray"
+            android:textSize="16dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarCadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCadastrarConta"
+            android:layout_width="175dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/custom_button"
+            android:enabled="true"
+            android:text="Criar"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
